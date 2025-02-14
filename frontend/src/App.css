@@ -1,0 +1,70 @@
+/* Include roboto font from Google API. */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", serif;
+}
+
+.grid_tiles_container h1 {
+  margin-top: 10px;
+}
+
+.grid_tiles_container p {
+  margin-bottom: 10px;
+}
+
+.grid_tiles_container {
+  max-width: 1220px;
+  margin: auto;
+  text-align: center;
+}
+
+.grid_tiles_list {
+  display: grid;
+  grid-template-columns: repeat(1fr, 20);
+  border-radius: 10;
+}
+
+.grid_titles {
+  display: flex;
+  width: 100%;
+}
+
+.grid_tiles {
+  border: 2px solid #0b75df;
+  width: 100%;
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.02s all ease-in-out;
+}
+
+.grid_tiles:hover {
+  background-color: #6daae6;
+  color: #fff;
+  transform: scale(1.09);
+}
+
+.reset_btn {
+  border: 1px solid rgb(223, 32, 11);
+  padding: 4px 16px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 5px 16px;
+  background-color: transparent;
+  font-weight: 500;
+  color: #3c3c3c;
+}
+
+.reset_btn:hover {
+  background-color: #e67d6d;
+  color: aliceblue;
+}
